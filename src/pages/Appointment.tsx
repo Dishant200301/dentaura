@@ -4,7 +4,7 @@ import AppointmentForm from "@/components/AppointmentForm";
 
 const AppointmentPage = () => (
   <>
-    <SEO title="Book Appointment — OralCare" description="Book your dental appointment with OralCare today." path="/appointment" />
+    <SEO title="Book Appointment — DentAura" description="Book your dental appointment with DentAura today." path="/appointment" />
     {/* Hero Section */}
     <section className="bg-[#f5f4f7] pb-10 pt-36 md:pt-36 lg:pt-44 overflow-hidden">
       <div className="container-site">

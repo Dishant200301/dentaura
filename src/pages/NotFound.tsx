@@ -11,7 +11,7 @@ const NotFound = () => {
 
   return (
     <>
-      <SEO title="404 — Page Not Found | OralCare" description="The page you are looking for could not be found." path={location.pathname} />
+      <SEO title="404 — Page Not Found | DentAura" description="The page you are looking for could not be found." path={location.pathname} />
       <section className="min-h-screen bg-[#f5f4f7] px-6 py-12 md:py-20 flex items-center justify-center overflow-hidden">
         <div className="mx-auto flex max-w-[700px] flex-col items-center">
           {/* 404 with Tooth Image */}

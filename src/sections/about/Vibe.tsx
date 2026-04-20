@@ -8,7 +8,7 @@ export const Vibe = () => {
         <div className="h-[350px] md:h-[450px] lg:h-[500px] xl:h-[600px] w-full lg:w-[450px] xl:w-[600px] shrink-0 overflow-hidden rounded-[16px]">
           <img
             src="/images/about/about-image-7.webp"
-            alt="OralCare Building"
+            alt="DentAura Building"
             className="h-full w-full object-cover"
           />
         </div>

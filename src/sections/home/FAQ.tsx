@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 gsap.registerPlugin(ScrollTrigger);
 
 const faqs = [
-  { q: "What services does Oralcare offer?", a: "We provide general, cosmetic, orthodontic, and preventive dental treatments. Every service is tailored to enhance your smile and oral health." },
+  { q: "What services does DentAura offer?", a: "We provide general, cosmetic, orthodontic, and preventive dental treatments. Every service is tailored to enhance your smile and oral health." },
   { q: "How often should I visit the dentist?", a: "A visit every six months is ideal for cleanings and checkups. Your dentist may suggest more visits based on your oral condition." },
   { q: "Do dental treatments hurt?", a: "Most treatments are comfortable with modern, gentle techniques. Local anesthesia is used when needed to ensure a pain-free experience." },
   { q: "How do I know which treatment is right for me?", a: "Our team evaluates your oral health and discusses your goals. We then recommend a personalized treatment plan that fits your needs." },

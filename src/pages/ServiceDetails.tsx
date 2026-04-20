@@ -33,7 +33,7 @@ const ServiceDetails = () => {
   return (
     <div className="overflow-x-hidden">
       <SEO 
-        title={`${service.title} — OralCare Service`} 
+        title={`${service.title} — DentAura Service`} 
         description={service.tagline} 
         path={`/services/${service.id}`} 
       />

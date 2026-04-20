@@ -6,7 +6,7 @@ import { Mail, Phone, MapPin, Clock } from "lucide-react";
 const ContactPage = () => {
   return (
     <>
-      <SEO title="Contact Us — OralCare" description="Get in touch with OralCare for any dental inquiries or to book an appointment." path="/contact" />
+      <SEO title="Contact Us — DentAura" description="Get in touch with DentAura for any dental inquiries or to book an appointment." path="/contact" />
       <section className="bg-brand-bg pb-10 pt-36 md:pt-36 lg:pt-44 overflow-hidden">
         <div className="container-site">
           <div className="grid gap-8 lg:gap-12 lg:grid-cols-2">
@@ -25,7 +25,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-brand-ink text-sm lg:text-base">Email</h3>
-                    <p className="text-brand-mute text-sm lg:text-base">hello@oralcare.com</p>
+                    <p className="text-brand-mute text-sm lg:text-base">hello@dentaura.com</p>
                   </div>
                 </div>
                 

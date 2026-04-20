@@ -15,7 +15,7 @@ import AppointmentForm from "@/components/AppointmentForm";
 const Index = () => {
   return (
     <>
-      <SEO title="OralCare — Premium Dental Care Clinic" description="Premium dental care with modern technology, expert dentists and a welcoming environment." path="/" />
+      <SEO title="DentAura — Premium Dental Care Clinic" description="Premium dental care with modern technology, expert dentists and a welcoming environment." path="/" />
       <div className="overflow-x-hidden">
       <Hero />
       <About />

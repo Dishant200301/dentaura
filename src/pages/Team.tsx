@@ -4,7 +4,7 @@ import { TeamGrid } from "@/sections/team/TeamGrid";
 
 const TeamPage = () => (
   <>
-    <SEO title="Team — OralCare" description="Meet our expert team of dentists, hygienists and specialists at OralCare." path="/team" />
+    <SEO title="Team — DentAura" description="Meet our expert team of dentists, hygienists and specialists at DentAura." path="/team" />
     <section className="bg-[#f5f4f7] pb-10 pt-36 md:pt-36 lg:pt-44 overflow-hidden">
       <div className="container-site">
         <div className="grid gap-8 md:grid-cols-2 md:items-end">

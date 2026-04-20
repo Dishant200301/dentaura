@@ -142,7 +142,7 @@ export const DentalInnovation = () => {
                 We'll keep relying on DentalInvest at every stage of our growth; it's impartial funding.
               </h3>
               <p className="font-display text-[20px] md:text-[24px] xl:text-[28px] font-medium leading-[28px] xl:leading-[35px] tracking-[-1px] xl:tracking-[-2px] text-[#0D1B15] mt-4 xl:mt-0">
-                Team Oralcare
+                Team DentAura
               </p>
             </div>
 
@@ -172,7 +172,7 @@ export const DentalInnovation = () => {
                   Partnering with DentalCapital has been crucial for QuantumSmile Innovations. This collaboration enhances our capabilities and aligns with our vision to revolutionize dental care. Together, we will seek innovative solutions for our clients and the industry.
                 </p>
                 <p className="font-display text-[22px] xl:text-[28px] font-medium leading-[30px] xl:leading-[35px] tracking-[-1px] xl:tracking-[-2px] text-[#0D1B15] mt-4 xl:mt-0">
-                  Dentist, Oralcare
+                  Dentist, DentAura
                 </p>
               </div>
 

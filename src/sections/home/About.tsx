@@ -64,7 +64,7 @@ const About = () => {
     };
   }, []);
 
-  const headingText = "At Oralcare we think everyone should have a radiant smile. Our expert team provides tailored care in a cozy environment, utilizing cutting-edge technology to achieve the best outcomes.";
+  const headingText = "At DentAura we think everyone should have a radiant smile. Our expert team provides tailored care in a cozy environment, utilizing cutting-edge technology to achieve the best outcomes.";
 
   return (
     <section className="relative w-full  bg-white py-20 lg:py-[120px]">
@@ -105,7 +105,7 @@ const About = () => {
           <div className="flex h-full w-full shrink-0 flex-col lg:w-[518px] lg:justify-between">
             <div className="space-y-6 md:space-y-8">
               <p className="font-inter text-[16px] sm:text-[18px] font-normal leading-[1.6] text-[#595E5C]">
-                At Oralcare, we make dental care simple, comfortable, and trustworthy. Our focus is on personalized treatments, modern technology, and gentle care — so every visit feels stress-free and effective.
+                At DentAura, we make dental care simple, comfortable, and trustworthy. Our focus is on personalized treatments, modern technology, and gentle care — so every visit feels stress-free and effective.
               </p>
               <p className="font-inter text-[16px] sm:text-[18px] font-normal leading-[1.6] text-[#595E5C]">
                 From routine checkups to advanced procedures, we're here to protect your smile and boost your confidence. Because great oral health starts with care you can trust.
@@ -119,7 +119,7 @@ const About = () => {
                 showIcon={false}
                 className="w-[141.92px] px-0 h-[51.2px] text-[16px] text-[#0D1B15] !rounded-[100px]"
               >
-                About Oralcare
+                About DentAura
               </Button>
             </div>
           </div>

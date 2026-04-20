@@ -9,7 +9,7 @@ import { VideoSection } from "@/sections/about/VideoSection";
 const AboutPage = () => {
   return (
     <>
-      <SEO title="About — OralCare" description="Get to know the OralCare team, our values and our approach to modern dental care." path="/about" />
+      <SEO title="About — DentAura" description="Get to know the DentAura team, our values and our approach to modern dental care." path="/about" />
       <div className="overflow-x-hidden">
       <AboutHero />
       <Vision />

@@ -4,7 +4,7 @@ import { privacySections, lastUpdated } from "@/data/privacy";
 
 const Privacy = () => (
   <>
-    <SEO title="Privacy Policy — OralCare" description="Read the OralCare privacy policy." path="/privacy-policy" />
+    <SEO title="Privacy Policy — DentAura" description="Read the DentAura privacy policy." path="/privacy-policy" />
     
     {/* Hero Section */}
     <section className="bg-[#f5f4f7] lg:pb-16 pt-36 md:pt-52">

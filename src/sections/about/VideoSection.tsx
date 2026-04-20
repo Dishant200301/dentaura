@@ -73,7 +73,7 @@ export const VideoSection = () => {
           {/* Left Text */}
           <div 
             ref={leftTextRef} 
-            className="absolute left-[10%] z-20 font-display text-[64px] font-medium tracking-[-3px] text-[#0D1B15] whitespace-nowrap"
+            className="absolute left-[28%] z-20 font-display text-[64px] font-medium tracking-[-3px] text-[#0D1B15] whitespace-nowrap"
           >
             ©2025
           </div>
@@ -93,7 +93,7 @@ export const VideoSection = () => {
           {/* Right Text */}
           <div 
             ref={rightTextRef} 
-            className="absolute right-[10%] z-20 font-display text-[64px] font-medium tracking-[-3px] text-[#0D1B15] whitespace-nowrap"
+            className="absolute right-[13%] z-20 font-display text-[64px] font-medium tracking-[-3px] text-[#0D1B15] whitespace-nowrap"
           >
             Teeth Whitening
           </div>

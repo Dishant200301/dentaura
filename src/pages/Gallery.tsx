@@ -16,7 +16,7 @@ const galleryImages = [
 const GalleryPage = () => {
   return (
     <>
-      <SEO title="Gallery — OralCare" description="Take a look at our modern dental clinic and the results we achieve for our patients." path="/gallery" />
+      <SEO title="Gallery — DentAura" description="Take a look at our modern dental clinic and the results we achieve for our patients." path="/gallery" />
       <section className="bg-brand-bg pb-10 pt-36 md:pt-36 lg:pt-44 overflow-hidden">
         <div className="container-site">
           <div className="grid gap-8 md:grid-cols-2 md:items-end">

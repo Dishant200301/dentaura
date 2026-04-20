@@ -92,7 +92,7 @@ const BlogDetails = () => {
   return (
     <>
       <SEO 
-        title={`${post.title} — OralCare Blog`} 
+        title={`${post.title} — DentAura Blog`} 
         description={post.excerpt} 
         path={`/blog/${post.slug}`} 
       />

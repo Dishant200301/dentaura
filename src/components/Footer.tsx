@@ -64,10 +64,10 @@ const Footer = () => {
                 Reach out to us at:
               </p>
               <a
-                href="mailto:hello@oralcare.com"
+                href="mailto:hello@dentaura.com"
                 className="mt-2 inline-block font-display text-[32px] sm:text-[40px] md:text-[48px] font-medium leading-[1.2] tracking-[-1.5px] md:tracking-[-3px] text-white transition-colors hover:text-[#D1FC71]"
               >
-                hello@oralcare.com
+                hello@dentaura.com
               </a>
             </div>
           </div>
@@ -165,7 +165,7 @@ const Footer = () => {
           {/* Logo - Mobile: Top (order-1), Laptop: Right (order-2) */}
           <div className="order-1 md:order-2 w-full md:w-auto text-center md:text-right">
             <span className="block font-display text-[40px] md:text-[64px] font-medium leading-none tracking-[-2px] text-white sm:text-[80px] lg:text-[112px] lg:tracking-[-4px]">
-              OralCare
+              DentAura
             </span>
           </div>
 

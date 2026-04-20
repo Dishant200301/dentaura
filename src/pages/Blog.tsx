@@ -143,8 +143,8 @@ const BlogPage = () => {
   return (
     <>
       <SEO
-        title="Blog — OralCare"
-        description="Explore dental insights, tips and patient stories from the OralCare team."
+        title="Blog — DentAura"
+        description="Explore dental insights, tips and patient stories from the DentAura team."
         path="/blog"
       />
 

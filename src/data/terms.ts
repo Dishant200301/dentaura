@@ -1,11 +1,11 @@
 export const termsSections = [
   {
     heading: "Acceptance of Terms",
-    content: "By accessing and using the OralCare website and services, you agree to comply with and be bound by these Terms & Conditions. If you do not agree with any part of these terms, you must not use our website or book our services."
+    content: "By accessing and using the DentAura website and services, you agree to comply with and be bound by these Terms & Conditions. If you do not agree with any part of these terms, you must not use our website or book our services."
   },
   {
     heading: "Dental Services",
-    content: "OralCare provides professional dental services and information. All consultations and treatments are subject to prior appointment booking and medical history review. We reserve the right to refuse service to anyone at our discretion."
+    content: "DentAura provides professional dental services and information. All consultations and treatments are subject to prior appointment booking and medical history review. We reserve the right to refuse service to anyone at our discretion."
   },
   {
     heading: "Appointment Policy",
@@ -21,11 +21,11 @@ export const termsSections = [
   },
   {
     heading: "Intellectual Property",
-    content: "All content on our website, including text, graphics, logos, and images, is the property of OralCare and is protected by copyright and intellectual property laws. You may not reproduce, distribute, or use any content without our express written permission."
+    content: "All content on our website, including text, graphics, logos, and images, is the property of DentAura and is protected by copyright and intellectual property laws. You may not reproduce, distribute, or use any content without our express written permission."
   },
   {
     heading: "Liability Limitation",
-    content: "OralCare and its staff shall not be liable for any indirect, incidental, or consequential damages arising from your use of our services or website, except where required by law."
+    content: "DentAura and its staff shall not be liable for any indirect, incidental, or consequential damages arising from your use of our services or website, except where required by law."
   },
   {
     heading: "Governing Law",

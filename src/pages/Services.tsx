@@ -5,7 +5,7 @@ import ServiceList from "@/sections/services/ServiceList";
 const ServicesPage = () => (
   <>
     <SEO 
-      title="Services — OralCare" 
+      title="Services — DentAura" 
       description="Explore our full range of dental services from general dentistry to advanced cosmetic procedures." 
       path="/services" 
     />

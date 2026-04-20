@@ -30,25 +30,25 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="fixed left-4 right-4 md:left-6 md:right-6 top-4 z-[100] h-[75.2px] lg:left-6 lg:right-6 lg:top-4 lg:mx-auto lg:max-w-[1300px] xl:left-6 xl:right-6">
+      <header className="fixed left-4 right-4 top-4 z-[100] h-[75.2px] lg:mx-auto lg:max-w-[1300px]">
         <nav
-          className="flex h-full w-full items-center justify-between rounded-lg bg-white px-6 shadow-[0px_2px_4px_rgba(13,27,21,0.2)] md:px-6"
+          className="flex h-full w-full items-center justify-between rounded-lg bg-white px-6 shadow-[0px_2px_4px_rgba(13,27,21,0.2)]"
           aria-label="Main navigation"
         >
           {/* Logo */}
           <Link to="/" className="flex h-10 items-center gap-2">
             <img
               src="/images/common/logo.webp"
-              alt="DentAura Logo Icon"
+              alt="OralCare Logo Icon"
               className="h-full w-auto object-contain"
             />
             <span className="font-inter text-2xl font-bold tracking-tight text-[#0D1B15]">
-              DentAura
+              OralCare
             </span>
           </Link>
 
           {/* Desktop Links */}
-          <ul className="hidden items-center gap-1 lg:flex">
+          <ul className="hidden items-center gap-1 xl:flex">
             {links.map((l) => (
               <li key={l.to}>
                 <NavLink
@@ -72,24 +72,24 @@ const Navbar = () => {
           </ul>
 
           {/* Desktop CTA */}
-          <div className="hidden lg:block">
-            <Button to="/appointment" variant="primary" showIcon={false} className="btn-slide w-[180px] h-[51.2px] px-8 justify-center text-[16px] font-medium whitespace-nowrap">
+          <div className="hidden xl:block">
+            <Button to="/appointment" variant="primary" withArrow={false} className="btn-slide w-[180px] h-[51.2px] px-8 justify-center text-[16px] font-medium whitespace-nowrap">
               Book Appointment
             </Button>
           </div>
 
-          {/* Mobile Menu Trigger */}
+          {/* Mobile/Tablet Menu Trigger */}
           <button
             aria-label="Toggle menu"
-            className="grid h-10 w-10 place-items-center rounded-full bg-white text-brand-ink lg:hidden shadow-sm"
+            className="grid h-10 w-10 place-items-center text-[#0D1B15] xl:hidden"
             onClick={() => setOpen(true)}
           >
-            <Menu size={24} />
+            <Menu size={28} strokeWidth={2} />
           </button>
         </nav>
       </header>
 
-      {/* Mobile/Tablet Menu Overlay - Works up to 1024px (xl) */}
+      {/* Mobile/Tablet Menu Overlay */}
       <AnimatePresence>
         {open && (
           <>
@@ -99,46 +99,46 @@ const Navbar = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setOpen(false)}
-              className="fixed inset-0 z-[60] bg-brand-ink/40 backdrop-blur-sm xl:hidden"
+              className="fixed inset-0 z-[110] bg-[#0D1B15]/40 backdrop-blur-sm xl:hidden"
             />
 
             {/* Menu Card - Slide Down Animation */}
             <motion.div
-              initial={{ y: "-100%", opacity: 0 }}
+              initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              exit={{ y: "-100%", opacity: 0 }}
-              transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="fixed top-4 left-4 right-4 md:left-10 md:right-10 lg:left-20 lg:right-20 lg:hidden z-[70] flex flex-col overflow-hidden rounded-[32px] bg-white p-6 shadow-2xl max-h-[85vh]"
+              exit={{ y: -20, opacity: 0 }}
+              transition={{ type: "spring", damping: 30, stiffness: 300 }}
+              className="fixed left-4 right-4 top-[20px] z-[120] flex max-h-[calc(100vh-110px)] flex-col overflow-hidden rounded-[16px] bg-white p-5 shadow-2xl md:left-4 md:right-4 xl:hidden"
             >
               {/* Menu Header */}
-              <div className="flex items-center justify-between shrink-0">
+              <div className="flex items-center justify-between">
                 <Link to="/" onClick={() => setOpen(false)} className="flex h-10 items-center gap-2">
                   <img
                     src="/images/common/logo.webp"
-                    alt="DentAura Logo Icon"
+                    alt="OralCare Logo Icon"
                     className="h-full w-auto object-contain"
                   />
                   <span className="font-inter text-2xl font-bold tracking-tight text-[#0D1B15]">
-                    DentAura
+                    OralCare
                   </span>
                 </Link>
                 <button
                   onClick={() => setOpen(false)}
-                  className="grid h-10 w-10 place-items-center rounded-full bg-white text-brand-ink shadow-sm"
+                  className="grid h-10 w-10 place-items-center text-[#0D1B15]"
                 >
-                  <X size={24} />
+                  <X size={28} strokeWidth={2} />
                 </button>
               </div>
 
-              {/* Menu Links */}
-              <div className="flex flex-col items-center justify-center gap-3 py-8">
+              {/* Menu Links - Centered like the image */}
+              <div className="flex flex-col items-center gap-3 py-6">
                 {links.map((l, index) => (
                   <motion.div
                     key={l.to}
-                    initial={{ opacity: 0, y: 10 }}
+                    initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.1 + index * 0.05 }}
-                    className="flex justify-center"
+                    className="w-full flex justify-center"
                   >
                     <NavLink
                       to={l.to}
@@ -146,14 +146,14 @@ const Navbar = () => {
                       onClick={() => setOpen(false)}
                       className={({ isActive }) =>
                         cn(
-                          "relative inline-flex items-center gap-2 rounded-[50px] px-4 py-2.5 transition-all duration-300 ease-in-out",
-                          "text-[#595E5C] hover:bg-[#D1FC71]",
+                          "relative inline-flex items-center gap-2 rounded-full px-6 py-2.5 transition-all duration-300",
+                          "text-[#595E5C] hover:bg-[#D1FC71] hover:text-[#0D1B15]",
                           isActive && "bg-[#D1FC71] text-[#0D1B15]"
                         )
                       }
                     >
                       <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-current" />
-                      <span className="font-inter text-base font-medium">
+                      <span className="font-inter text-lg font-medium">
                         {l.label}
                       </span>
                     </NavLink>
@@ -162,14 +162,16 @@ const Navbar = () => {
               </div>
 
               {/* Menu Footer CTA */}
-              <div className="pb-4 pt-2 flex justify-center w-full shrink-0">
-                <Link
+              <div className="pt-2 pb-2 flex justify-center w-full">
+                <Button
                   to="/appointment"
+                  variant="primary"
+                  withArrow={false}
                   onClick={() => setOpen(false)}
-                  className="w-full h-[48px] rounded-full px-6 flex items-center justify-center bg-[#D1FC71] text-[#0D1B15] font-inter text-base font-medium hover:bg-[#c5f065] transition-colors"
+                  className="w-full max-w-[280px] h-[52px] px-8 justify-center text-base rounded-full font-medium"
                 >
                   Book Appointment
-                </Link>
+                </Button>
               </div>
             </motion.div>
           </>

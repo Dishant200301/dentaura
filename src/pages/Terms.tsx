@@ -4,7 +4,7 @@ import { termsSections, termsLastUpdated } from "@/data/terms";
 
 const Terms = () => (
   <>
-    <SEO title="Terms & Conditions — OralCare" description="Read the OralCare terms and conditions." path="/terms" />
+    <SEO title="Terms & Conditions — DentAura" description="Read the DentAura terms and conditions." path="/terms" />
 
     {/* Hero Section */}
     <section className="bg-[#f5f4f7] lg:pb-16 pt-36 md:pt-52">
