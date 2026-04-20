@@ -1,0 +1,9 @@
+# Netlify redirect rules
+# Redirect www to non-www
+https://www.dentaurasmilestudio.com/* https://dentaurasmilestudio.com/:splat 301!
+
+# Redirect HTTP to HTTPS
+http://dentaurasmilestudio.com/* https://dentaurasmilestudio.com/:splat 301!
+
+# SPA fallback - all routes to index.html
+/* /index.html 200

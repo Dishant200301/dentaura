@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* OralCare design system. All colors must be HSL. */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 156 35% 8%; /* #0D1B15 */
+
+    --card: 0 0% 100%;
+    --card-foreground: 156 35% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 156 35% 8%;
+
+    --primary: 156 35% 8%; /* dark forest #0D1B15 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 60 11% 96%; /* #F5F4F7 surface */
+    --secondary-foreground: 156 35% 8%;
+
+    --muted: 60 11% 96%;
+    --muted-foreground: 150 4% 37%; /* #595E5C */
+
+    --accent: 80 96% 72%; /* #D1FC71 lime */
+    --accent-foreground: 156 35% 8%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 80 9% 79%; /* #C9CBC5 */
+    --input: 60 7% 94%; /* #F2F2EF */
+    --ring: 156 35% 8%;
+
+    --radius: 0.75rem;
+
+    /* brand specific */
+    --brand-bg: 60 11% 96%;
+    --brand-soft: 156 8% 91%;
+    --brand-ink: 156 35% 8%;
+    --brand-mute: 150 4% 37%;
+    --brand-lime: 80 96% 72%;
+    --brand-lime-strong: 80 70% 60%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 156 35% 8%;
+    --foreground: 0 0% 100%;
+    --card: 156 35% 10%;
+    --card-foreground: 0 0% 100%;
+    --popover: 156 35% 10%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 156 35% 8%;
+    --secondary: 156 20% 14%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 156 20% 14%;
+    --muted-foreground: 150 4% 65%;
+    --accent: 80 96% 72%;
+    --accent-foreground: 156 35% 8%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 156 20% 14%;
+    --input: 156 20% 14%;
+    --ring: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+  }
+}
+
+/* Premium button hover slide-up */
+@layer components {
+  .btn-slide {
+    @apply relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-[100px] px-8 py-3 min-h-[51.2px] transition-all duration-500 cursor-pointer isolation-auto;
+    transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+    mask-image: radial-gradient(white, black);
+  }
+  .btn-slide::before {
+    content: '';
+    @apply absolute inset-0 top-full h-full w-full transition-transform duration-500 z-0 rounded-[100px];
+    transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  .btn-slide:hover::before {
+    @apply -translate-y-full;
+  }
+  .btn-slide > span {
+    @apply relative z-10;
+  }
+  .btn-lime {
+    @apply bg-[#D1FC71] text-[#595E5C];
+  }
+  .btn-lime::before {
+    @apply bg-[#0D1B15];
+  }
+  .btn-lime:hover {
+    @apply text-white;
+  }
+  .btn-white {
+    @apply bg-white text-[#595E5C];
+  }
+  .btn-white::before {
+    @apply bg-[#595E5C];
+  }
+  .btn-white:hover {
+    @apply text-white;
+  }
+  .btn-dark {
+    @apply bg-[#0D1B15] text-white;
+  }
+  .btn-dark::before {
+    @apply bg-[#D1FC71];
+  }
+  .btn-dark:hover {
+    @apply text-[#0D1B15];
+  }
+  .btn-icon-wrap {
+    @apply relative flex h-5 w-5 items-center justify-center overflow-hidden;
+  }
+  .btn-icon-wrap .icon-1 {
+    @apply absolute transition-transform duration-500;
+    transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  .btn-slide:hover .btn-icon-wrap .icon-1 {
+    @apply translate-x-full opacity-0;
+  }
+  .btn-icon-wrap .icon-2 {
+    @apply absolute -translate-x-full opacity-0 transition-transform duration-500;
+    transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  .btn-slide:hover .btn-icon-wrap .icon-2 {
+    @apply translate-x-0 opacity-100;
+  }
+
+  .reveal-mask {
+    overflow: hidden;
+    display: inline-block;
+  }
+  .reveal-char {
+    display: inline-block;
+    will-change: transform, opacity;
+  }
+
+  /* gallery marquee */
+  @keyframes marquee-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes marquee-right {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+  .marquee-track-left { animation: marquee-left 40s linear infinite; }
+  .marquee-track-right { animation: marquee-right 40s linear infinite; }
+
+  /* floating animation for 404 tooth */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  .animate-float { animation: float 3s ease-in-out infinite; }
+
+  /* page transition */
+  @keyframes page-in {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+  }
+  @keyframes page-out {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+  }
+
+  .container-site {
+    @apply mx-auto w-full max-w-[1300px] px-4 sm:px-6 xl:px-0;
+  }
+
+  /* Hide default browser icons for date and time inputs */
+  input[type="date"]::-webkit-calendar-picker-indicator,
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none !important;
+    -webkit-appearance: none;
+  }
+}
