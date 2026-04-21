@@ -1,4 +1,4 @@
-# OralCare - Premium Dental Care Website
+# DentAura - Premium Dental Care Website
 
 A modern, responsive dental care website built with React, TypeScript, and Tailwind CSS. Features a beautiful UI with smooth animations, comprehensive service listings, team profiles, and appointment booking functionality.
 
@@ -95,7 +95,7 @@ src/
 | Page | Route | Description |
 |------|-------|-------------|
 | **Home** | `/` | Landing page with hero, services, team, testimonials, FAQ |
-| **About** | `/about` | About OralCare, vision, dental innovation, client testimonials |
+| **About** | `/about` | About DentAura, vision, dental innovation, client testimonials |
 | **Services** | `/services` | List of all dental services offered |
 | **Service Details** | `/services/:id` | Detailed view of specific service |
 | **Team** | `/team` | Meet our expert dentists and specialists |
@@ -184,4 +184,4 @@ src/
 
 ## License
 
-© 2025 OralCare. All rights reserved.
+© 2026 DentAura. All rights reserved.
