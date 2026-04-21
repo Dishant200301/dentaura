@@ -39,11 +39,11 @@ const Navbar = () => {
           <Link to="/" className="flex h-10 items-center gap-2">
             <img
               src="/images/common/logo.webp"
-              alt="OralCare Logo Icon"
+              alt="DentAura Logo Icon"
               className="h-full w-auto object-contain"
             />
             <span className="font-inter text-2xl font-bold tracking-tight text-[#0D1B15]">
-              OralCare
+              DentAura
             </span>
           </Link>
 
@@ -73,7 +73,7 @@ const Navbar = () => {
 
           {/* Desktop CTA */}
           <div className="hidden xl:block">
-            <Button to="/appointment" variant="primary" withArrow={false} className="btn-slide w-[180px] h-[51.2px] px-8 justify-center text-[16px] font-medium whitespace-nowrap">
+            <Button to="/appointment" variant="primary" showIcon={false} className="btn-slide w-[180px] h-[51.2px] px-8 justify-center text-[16px] font-medium whitespace-nowrap">
               Book Appointment
             </Button>
           </div>
@@ -115,11 +115,11 @@ const Navbar = () => {
                 <Link to="/" onClick={() => setOpen(false)} className="flex h-10 items-center gap-2">
                   <img
                     src="/images/common/logo.webp"
-                    alt="OralCare Logo Icon"
+                    alt="DentAura Logo Icon"
                     className="h-full w-auto object-contain"
                   />
                   <span className="font-inter text-2xl font-bold tracking-tight text-[#0D1B15]">
-                    OralCare
+                    DentAura
                   </span>
                 </Link>
                 <button
@@ -166,7 +166,7 @@ const Navbar = () => {
                 <Button
                   to="/appointment"
                   variant="primary"
-                  withArrow={false}
+                  showIcon={false}
                   onClick={() => setOpen(false)}
                   className="w-full max-w-[280px] h-[52px] px-8 justify-center text-base rounded-full font-medium"
                 >
