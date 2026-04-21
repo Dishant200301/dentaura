@@ -12,19 +12,19 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
-import Index from "./pages/Index";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import ServiceDetails from "./pages/ServiceDetails";
-import Team from "./pages/Team";
-import Gallery from "./pages/Gallery";
-import BlogPage from "./pages/Blog";
-import BlogDetails from "./pages/BlogDetails";
-import Appointment from "./pages/Appointment";
-import Contact from "./pages/Contact";
-import Privacy from "./pages/Privacy";
-import Terms from "./pages/Terms";
-import NotFound from "./pages/NotFound";
+import Index from "./modules/home/home";
+import About from "./modules/about/about";
+import Services from "./modules/services/services";
+import ServiceDetails from "./modules/service-details/service-details";
+import Team from "./modules/team/team";
+import Gallery from "./modules/gallery/gallery";
+import BlogPage from "./modules/blog/blog";
+import BlogDetails from "./modules/blog-details/blog-details";
+import Appointment from "./modules/appointment/appointment";
+import Contact from "./modules/contact/contact";
+import Privacy from "./modules/privacy/privacy";
+import Terms from "./modules/terms/terms";
+import NotFound from "./modules/not-found/not-found";
 
 const queryClient = new QueryClient();
 

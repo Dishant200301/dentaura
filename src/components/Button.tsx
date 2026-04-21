@@ -13,12 +13,12 @@ interface ButtonBase {
 interface AsLink extends ButtonBase {
   to: string;
   href?: never;
-  onClick?: never;
+  onClick?: MouseEventHandler<HTMLAnchorElement>;
 }
 interface AsAnchor extends ButtonBase {
   href: string;
   to?: never;
-  onClick?: never;
+  onClick?: MouseEventHandler<HTMLAnchorElement>;
 }
 interface AsButton extends ButtonBase {
   to?: never;
@@ -51,14 +51,14 @@ export function Button(props: ButtonProps) {
 
   if ("to" in props && props.to) {
     return (
-      <Link to={props.to} className={cls}>
+      <Link to={props.to} className={cls} onClick={props.onClick as MouseEventHandler<HTMLAnchorElement>}>
         {inner}
       </Link>
     );
   }
   if ("href" in props && props.href) {
     return (
-      <a href={props.href} className={cls}>
+      <a href={props.href} className={cls} onClick={props.onClick as MouseEventHandler<HTMLAnchorElement>}>
         {inner}
       </a>
     );
